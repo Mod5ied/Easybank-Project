@@ -1,0 +1,663 @@
+@import url("https://fonts.googleapis.com/css2?family=Bitter&family=Public+Sans:wght@300;400;700&display=swap");
+* {
+  box-sizing: border-box;
+  border: 1px solid red !important;*/
+}
+body {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  background: hsl(0, 0%, 95%);
+  font-family: 'Public Sans', sans-serif;
+}
+body::before {
+  content: "";
+  position: absolute;
+  top: 10%;
+  bottom: 64%;
+  right: 0;
+  left: 0;
+  background: hsl(0, 0%, 80%);
+  z-index: -1;
+}
+body::after {
+  content: "";
+  position: absolute;
+  top: -1.8%; 
+  bottom: 30%;
+  right: 0;
+  left: 0;
+  background: url("./images/bg-intro-mobile.svg") no-repeat ;
+  z-index: -1;
+}
+
+/* Style the nav menu*/
+
+@media screen and (max-width: 600px){
+  ul{
+    display: flex;
+    flex-flow: column;
+  }
+  ul.topnav{    
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background: hsl(0, 0%, 100%);
+    list-style-type: none;
+    }
+  ul.topnav li{
+    display: none;
+    
+  }
+  .topnav div{
+    display: flex;
+    flex-flow: row;
+  }
+  ul.topnav li.icon{
+    display: flex;
+    flex-flow: row;
+    justify-content: flex-end;*/
+    margin-right: 0;
+    /*position: absolute;
+    right: 0;
+    top: 0;*/
+  }
+  ul.topnav li.icon a{
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+  }
+}
+@media screen and (max-width: 600px){
+  ul{
+    position: relative;
+    
+    z-index: 1;
+    overflow: hidden;
+    background: hsl(0, 0%, 100%);
+  }
+/*The responsive class added by JS when user clicks on icon*/
+  /*This Is The Droprddown Menu Section */
+  ul.topnav.responsive:not(.icon){
+    position: relative;
+    margin-right: 10px;
+    margin-left: 10px;
+    padding: 0;
+    margin-top: auto;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    z-index: 1;
+  }
+  ul.topnav.responsive li:not(.icon){
+    float: none;
+    display: inline;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    /*margin-left: 10px;
+    margin-right: 10px;*/
+    box-shadow: 0.8rem 0.8rem 0.8rem 0.8rem hsl(0, 0%, 97%);
+    background: hsl(0, 0%, 100%);
+    padding: 14px auto;
+    line-height: 1.9;
+  }
+  ul.topnav.responsive li a{
+    display: block;
+    /*margin-right: 10px;
+    margin-left: 10px;*/
+    font-size: 16px;
+    font-family: 'Public-Sans', sans-serif;
+    color: hsl(0, 0%, 5%);
+    text-decoration: none;
+    text-align: center;
+  }
+  ul.topnav.responsive li:hover:not(.icon) a{
+    background: hsl(0, 0%, 30%);
+    border-radius: 5px;
+    color: hsl(0, 0%, 100%);
+}
+  .topnav.responsive div{
+    display: flex;
+    flex-flow: row;
+  }
+  ul.topnav.responsive li.icon {
+    /*display: flex;
+    flex-flow: row;
+    justify-content: flex-end;*/
+    position: relative;
+    right: 0;
+    left: 5px;
+  }
+  ul.topnav.responsive li.icon {
+    font-size: 20px;
+    text-decoration: none;
+  }
+  
+  
+  
+
+}
+/* Article 1 styling*/
+.wrapper1 {
+  display: flex;
+  flex-direction: column;
+
+  margin-top: 8em;
+  padding: 1em;
+}
+.wrapper1 img{
+  width: 60%;
+  height: auto;
+  position: absolute;
+  top: 1%; 
+  bottom: 30%;
+  right: 0; 
+  left: 0;
+  overflow: hidden;
+}
+.wrapper1 h1 {
+  margin-top: 50%;
+  padding: 0 1em;
+  font-size: 30px;
+  text-align: center;
+  color: hsl(0, 0%, 30%);
+}
+.wrapper1 p {
+  padding: 0 1em;
+  text-align: center;
+  font-size: 12px;
+  color: hsl(0, 0%, 30%);
+}
+.wrapper1 button {
+  width: 38%;
+  height: 2em;
+  margin-right: auto;
+  margin-left: auto;
+  padding: auto;
+  border: none;
+  border-radius: 24px;
+  background: linear-gradient(to right, hsl(136, 65%, 51%), hsl(192, 70%, 51%));
+  color: hsl(0, 0%, 98%);
+  cursor: pointer;
+}
+.foot button:hover {
+  background: linear-gradient(to right, hsl(136, 65%, 70%), hsl(192, 70%, 70%));
+  opacity: 0.8;
+}
+/* THE ARTICLE2 STYLING */
+/*The Container For <h2> and <p>*/
+.wrapper2 {
+  display: flex;
+  flex-flow: column;
+
+  padding: 1em;
+}
+.wrapper2 h2 {
+  padding: 0 55px;
+  text-align: center;
+  color: hsl(0, 0%, 30%);
+}
+.wrapper2 p {
+  padding: 0 1.2em;
+  text-align: center;
+
+  color: hsl(0, 0%, 30%);
+}
+
+/* The Container For .second class*/
+/* The Container For <svg> <h3> <p> */
+.secondDiv {
+  display: flex;
+  flex-flow: column;
+
+  padding: 5em;
+}
+.second svg {
+  margin-right: 39%;
+  margin-left: 39%;
+}
+.second h4 {
+  text-align: center;
+}
+.second p {
+  padding: 0 1em;
+  text-align: center;
+}
+
+/* THE ARTICLE3 STYLING */
+.article3 {
+  display: flex;
+  flex-direction: column;
+
+  padding: 1em;
+}
+/*A Mini-Header*/
+#mini-header h2 {
+  text-align: center;
+  color: hsl(0, 0%, 30%);
+}
+.img {
+  width: 98%;
+  margin: 5px;
+  border-radius: 6px;
+  box-shadow: 0.1rem 0.2rem 0.2rem 0.1rem hsl(0, 0%, 97%);
+  float: left;
+  transition: 1s;
+}
+.img:hover {
+  opacity: 0.7;
+}
+.img img {
+  width: 100%;
+  height: auto;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+.desc {
+  padding: 15px;
+  text-align: left;
+}
+.desc p {
+  font-size: 10px;
+}
+.desc h4 {
+  font-size: 18px;
+}
+.desc .p2 {
+  font-size: 12px;
+}
+
+/* THE FOOTER STYLING */
+footer {
+  display: flex;
+  flex-flow: column;
+
+  background: hsl(233, 26%, 24%);
+  margin-top: 4.7em;
+  padding: 1em;
+}
+.feet #logos {
+  margin-left: 30%;
+  margin-right: auto;
+  margin-top: 1em;
+}
+.feetIcons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.feetIcons svg {
+  margin: 8px;
+  margin-top: 1.5em;
+}
+.info {
+  display: flex;
+  flex-flow: column;
+
+  padding: 1em;
+}
+.info p {
+  margin-right: auto;
+  margin-left: auto;
+  font-size: 0.8em;
+  color: hsl(0, 0%, 100%);
+  line-height: 0.3;
+}
+#info2 {
+  margin-top: -1.6em;
+}
+.foot {
+  display: flex;
+  flex-flow: column;
+
+  padding: 1em;
+}
+.foot button {
+  width: 43%;
+  height: 2.2em;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: -0.9em;
+  padding: auto;
+  outline: none;
+  border: none;
+  border-radius: 25px;
+  background: linear-gradient(to right, hsl(136, 65%, 51%), hsl(192, 70%, 51%));
+  font-size: 0.9 rem;
+  color: hsl(0, 0%, 98%);
+  cursor: pointer;
+  transition: 1s;
+}
+.foot button:hover {
+  background: linear-gradient(to right, hsl(136, 65%, 70%), hsl(192, 70%, 70%));
+  opacity: 0.9;
+}
+.foot p {
+  margin-right: auto;
+  margin-left: auto;
+  font-size: 12px;
+  color: hsl(0, 0%, 98%);
+}
+.attribution {
+  font-size: 11px;
+  position: relative;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+@media screen and (min-width: 650px) {
+  body{
+    overflow-x: hidden;
+    background: hsl(0, 0%, 98%);
+  }
+  body::before {
+    content: "";
+    position: absolute;
+    top: 27%;
+    bottom: 44%; /*reduce and it goes down*/
+    right: 0;
+    left: 0;
+    background: hsl(0, 0%, 95%);
+    z-index: -1;
+  }
+  body::after {
+    content: "";
+    position: absolute;
+    top: -10%; /*reduce and it comes down*/
+    bottom: 30%;
+    right: -45%;
+    left: 0;
+    background: url("./images/bg-intro-desktop.svg") right top no-repeat;
+    background-size: 70% 50%;
+    z-index: -1;
+  }
+  ul{
+    display: flex;
+    flex-flow: row;
+    justify-content: flex-start;
+    position: relative;
+    z-index: 1;
+  }
+  ul.topnav{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background: hsl(0, 0%, 100%); 
+    }
+    /*ul.topnav li{  
+    }*/
+    ul.topnav li a{
+      color: hsl(0, 0%, 10%);
+      text-align: center;
+      margin: 10px 10px;
+      text-decoration: none;
+      transition: 0.3s;
+      font-size: 16px;
+    }
+
+    ul.topnav li a:hover{
+      border-bottom: 1px solid blue;
+    }
+
+    li.icon {
+      display: none;
+    }
+
+
+  #Article1 {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+
+    padding: 1em;
+  }
+  .wrapper1 {
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
+
+    padding: 0.9rem;
+  }
+  .wrapper1 img {
+    width: 49%;
+    height: 39%;
+    position: absolute;
+    top: -5%; /*The lwer u go the more it comes down*/
+    bottom: 30%;
+    right: 0;
+    left: 59%;
+    overflow: hidden;
+  }
+  .wrapper1 h1 {
+    /*width: 50%;*/
+    margin-top: -5%;
+    margin-left: -1em;
+    font-size: 40px;
+    font-weight: 300;
+    text-align: left;
+    color: hsl(0, 0%, 30%);
+  }
+  .wrapper1 p {
+    /*width: 44%;*/
+    margin-top: -0.6em;
+    margin-left: -1em;
+    text-align: left;
+    font-size: 18px;
+    color: hsl(0, 0%, 30%);
+  }
+  .wrapper1 button {
+    width: 40%;
+    height: 90%;
+    margin-top: 1em;
+    margin-left: 0;
+    padding: 0.7rem;
+    outline: none;
+    border: none;
+    border-radius: 25px;
+    background: linear-gradient(
+      to right,
+      hsl(136, 65%, 51%),
+	  hsl(192, 70%, 51%));
+    font-size: 16px;
+    font-weight: 300;
+    color: hsl(0, 0%, 98%);
+    transition: 1s;
+    cursor: pointer;
+  }
+.wrapper1 button:hover {
+  background: linear-gradient(
+    to right,
+    hsl(136, 65%, 70%),
+    hsl(192, 70%, 70%)
+  );
+  opacity: 0.8;
+}
+
+  #Article2 {
+    display: flex;
+    flex-flow: column;
+
+    margin-top: 12%;
+    margin-bottom: -5%;
+  }
+  .wrapper2 {
+    display: flex;
+    flex-flow: column;
+
+    padding: 1rem;
+  }
+  .wrapper2 h2 {
+    margin-left: -1.2em;
+    font-size: 30px;
+    font-weight: 400;
+    text-align: left;
+    color: hsl(0, 0%, 30%);
+  }
+  .wrapper2 p {
+    padding: 0 1.2em;
+    font-size: 18px;
+    font-weight: 300;
+    text-align: left;
+    color: hsl(0, 0%, 30%);
+  }
+  .secondDiv {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+
+    padding: 1rem;
+  }
+  .second {
+    display: flex;
+    flex-flow: column;
+  }
+  .second svg {
+    margin-right: auto;
+    margin-left: 1em;
+  }
+  .second h4 {
+    padding: 0 1em;
+    font-size: 22px;
+    font-weight: 300;
+    text-align: left;
+  }
+  .second p {
+    padding: 0 1em;
+    font-size: 16px;
+    font-weight: 200;
+    text-align: left;
+  }
+
+  .article3 {
+    display: flex;
+    flex-flow: column;
+	
+	  margin-top: 12%;
+	  padding: 1rem;
+  }
+  #mini-header h2 {
+    margin: 0 5px;
+    padding: 0 1rem;
+    font-size: 30px;
+    font-weight: 400;
+    text-align: left;
+    color: hsl(0, 0%, 30%);
+  }
+  .thirdWrap {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+
+    padding: 1rem;
+  }
+  .img {
+    width: 30%;
+    height: auto;
+    margin: 20px 5px;
+    border-radius: 6px;
+    box-shadow: 0.1rem 0.2rem 0.2rem 0.1rem hsl(0, 0%, 97%);
+    float: left;
+  }
+  .img img {
+    width: 100%;
+    height: 50%;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+  }
+  .desc {
+    padding: 1em;
+    text-align: left;
+  }
+  .desc p {
+	font-size: 13px;
+	font-weight: 200;
+  }
+  .desc h4 {
+    margin-left: -0.5em;
+    padding-left: 10px;
+    font-size: 19px;
+    font-weight: 400;
+  }
+  .desc .p2 {
+    margin-top: -0.6em;
+    font-size: 15px;
+    font-weight: 100;
+  }
+
+  footer{
+    display: inline-flex;
+    flex-flow: row;
+    justify-content: space-between;
+	
+	width: 100%;
+  }
+  .feet {
+    display: flex;
+    flex-flow: column;
+  }
+  .feet #logos {
+    margin-left: 1rem;
+    margin-right: auto;
+  }
+  .feetIcons {
+    display: flex;
+    flex-direction: row;
+  }
+  .feetIcons svg {
+    margin-right: 0.6px;
+    margin-left: 1rem;
+    margin-top: 2.5em;
+  }
+  .info {
+    display: flex;
+    flex-flow: column;
+
+    margin-left: -20%;
+  }
+  .info p {
+    margin-right: auto;
+    text-align: left;
+	  font-size: 16px;
+    color: hsl(0, 0%, 100%);
+    line-height: 0.3;
+  }
+  #info2 {
+    margin-top: 0;
+  }
+  .foot {
+    display: flex;
+    flex-flow: column;
+  }
+  .foot button {
+    width: 73%;
+    height: 35%;
+    margin-top: 2%;
+    padding: 0.5rem;
+    outline: none;
+    border: none;
+    border-radius: 25px;
+    background: linear-gradient(
+        to right,
+      hsl(136, 65%, 51%),
+	    hsl(192, 70%, 51%));
+	  font-size: 16px;
+    color: hsl(0, 0%, 98%);
+    cursor: pointer;
+  }
+  .foot button:hover {
+    background: linear-gradient(
+      to right,
+      hsl(136, 65%, 70%),
+      hsl(192, 70%, 70%)
+    );
+    opacity: 0.8;
+  }
+  .foot p {
+	  margin-top: 12%;
+	  margin-right: 1em;
+	  font-size: 16px;
+    color:  hsl(220, 16%, 96%);
+  }
+}
