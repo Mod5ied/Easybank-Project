@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Bitter&family=Public+Sans:wght@300;400;700&display=swap");
 * {
   box-sizing: border-box;
-  /*border: 1px solid red !important;*/
+  border: 1px solid red !important;*/
 }
 html, body{
   max-width: 100%;
@@ -36,7 +36,6 @@ body::after {
   overflow: hidden;
 }
 /* Style the nav menu*/
-
 @media screen and (max-width: 600px){
   ul{
     display: flex;
@@ -112,6 +111,7 @@ body::after {
     display: block;
     /*margin-right: 10px;
     margin-left: 10px;*/
+    border-radius: 5px;
     font-size: 16px;
     font-family: 'Public-Sans', sans-serif;
     color: hsl(0, 0%, 5%);
@@ -120,7 +120,7 @@ body::after {
   }
   ul.topnav.responsive li:hover:not(.icon) a{
     background: hsl(0, 0%, 30%);
-    border-radius: 5px;
+    
     color: hsl(0, 0%, 100%);
 }
   .topnav.responsive div{
@@ -391,6 +391,7 @@ footer {
     flex-flow: row;
     justify-content: flex-start;
     position: relative;
+    width: 100vw;
     z-index: 1;
   }
   ul.topnav{
@@ -402,16 +403,22 @@ footer {
     }
     /*ul.topnav li{  
     }*/
-    ul.topnav li a{
+    .topnav li a{
+      width: 100vw;
       color: hsl(0, 0%, 10%);
       text-align: center;
       margin: 10px 10px;
       text-decoration: none;
       transition: 0.3s;
-      font-size: 16px;
+      font-size: 1.3em;
     }
-
-    ul.topnav li a:hover{
+    .topnav div{ 
+      margin-left: 5%;
+    }
+    .topnav li.one{
+      margin-left: 25vw;
+    }
+    ul.topnav li:hover{
       border-bottom: 1px solid blue;
     }
 
@@ -419,12 +426,11 @@ footer {
       display: none;
     }
 
-
   #Article1 {
     display: flex;
     flex-flow: row;
     justify-content: space-between;
-
+    margin: 0 2.5vw;
     padding: 1em;
   }
   .wrapper1 {
@@ -448,8 +454,8 @@ footer {
     /*width: 50%;*/
     margin-top: -5%;
     margin-left: -1em;
-    font-size: 40px;
-    font-weight: 300;
+    font-size: 50px;
+    font-weight: 400;
     text-align: left;
     color: hsl(0, 0%, 30%);
   }
@@ -462,11 +468,11 @@ footer {
     color: hsl(0, 0%, 30%);
   }
   .wrapper1 button {
-    width: 40%;
-    height: 90%;
+    width: 14%;
+    height: 2rem;
     margin-top: 1em;
     margin-left: 0;
-    padding: 0.7rem;
+    padding: auto;
     outline: none;
     border: none;
     border-radius: 25px;
@@ -474,7 +480,7 @@ footer {
       to right,
       hsl(136, 65%, 51%),
 	  hsl(192, 70%, 51%));
-    font-size: 16px;
+    font-size;
     font-weight: 300;
     color: hsl(0, 0%, 98%);
     transition: 1s;
@@ -495,6 +501,7 @@ footer {
 
     margin-top: 12%;
     margin-bottom: -5%;
+    margin-left: 2.5vw;
   }
   .wrapper2 {
     display: flex;
@@ -504,8 +511,8 @@ footer {
   }
   .wrapper2 h2 {
     margin-left: -1.2em;
-    font-size: 30px;
-    font-weight: 400;
+    font-size: 35px;
+    font-weight: 500;
     text-align: left;
     color: hsl(0, 0%, 30%);
   }
